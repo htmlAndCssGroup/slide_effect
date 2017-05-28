@@ -1,0 +1,110 @@
+#wrapper {
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:50px;
+  left:10px;
+  box-shadow:0 0 10px rgba(0,0,0,.7);
+}
+
+#cover-img {
+  position:absolute;
+  top:0;
+  left:0;
+  cursor:pointer;
+  width:inherit;
+  height:inherit;
+  background-image:url('https://www.greathouse.com/wp-content/uploads/2017/01/Wall-Decor-Square-400px-x-400px.jpg');
+  /* 추가된 부분 */
+  z-index:100;
+  transition:1s;
+  transition-timing-function:ease-in-out;
+}
+
+#slide-img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:inherit;
+  height:inherit;
+  /* 추가된 부분 */
+  z-index:10;
+  overflow:hidden;
+}
+
+.slide {
+  background-image:url('http://100dayscss.com/codepen/slice-image-1.jpg');
+  width:400px;
+  height:400px;
+  /* 추가된 부분 */
+  transition:1s;
+  transition-timing-function:ease-in-out;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-4,
+.slide-5, .slide-6, .slide-7, .slide-8 {
+  width:50px;
+  height:400px;
+  position:absolute;
+}
+
+.slide-1 {
+  background-position:0px 0px;
+  top:-40px;
+  left:0;
+}
+
+.slide-2 {
+  background-position:-50px 0px;
+  top:40px;
+  left:50px;
+}
+
+.slide-3 {
+  background-position:-100px 0px;
+  top:-40px;
+  left:100px;
+}
+
+.slide-4 {
+  background-position:-150px 0px;
+  top:40px;
+  left:150px;
+}
+
+.slide-5 {
+  background-position:-200px 0px;
+  top:-40px;
+  left:200px;
+}
+
+.slide-6 {
+  background-position:-250px 0px;
+  top:40px;
+  left:250px;
+}
+
+.slide-7 {
+  background-position:-300px 0px;
+  top:-40px;
+  left:300px;
+}
+
+.slide-8 {
+  background-position:-350px 0px;
+  top:40px;
+  left:350px;
+}
+
+/* 추가된 부분 */
+.fadeAway {
+  opacity:0;
+}
+
+.up {
+  transform:translateY(-40px);
+}
+
+.down {
+  transform:translateY(40px);
+}
